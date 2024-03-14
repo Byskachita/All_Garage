@@ -90,6 +90,15 @@ h3 {
     background-color: #FDC309;
 }
 
+.smoth .card {
+    background-color: #FDC309;
+    border-style: none;
+}
+
+.smoth img {
+    width: 400px;
+    height: auto;
+}
 /*****************************************Icon Section*/
 
 img {
