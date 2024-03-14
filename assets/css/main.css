@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+h3 {
+    font-family: 'Anton', sans-serif;
+}
+
+.container_nav {
+    background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 80%;
+    margin: auto; 
+}
+
+.navbar img {
+    width: auto;
+    height: 70px;
+}
+
+.navbar .navbar-brand {
+    width: 40px;
+    height: auto;
+}
+
+.nav-item .nav-link active {
+    color: #FDC309;
+}
+
+/********************************SLIDER*/
+
+#carouselExampleAutoplaying {
+    display: flex;
+}
+
+.txt_slider {
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 150px;
+}
+
+.txt_slider_ {
+    position: absolute;
+    text-align: left;
+    padding: 50px 100px;
+    top: 100px;
+}
+
+.txt_slider h1 {
+    font-size: 50px;
+    color: black;
+}
+
+.txt_slider h2 {
+    font-size: 50px;
+    color: #000000;
+    text-align: left;
+}
+
+.txt_slider p {
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+
+/*****************************************CARDS*/
+
+.btn {
+    position: bottom;
+}
+
+/*****************************************SECTION SMOTH*/
+
+.smoth {
+    background-color: #FDC309;
+}
+
+/*****************************************Icon Section*/
+
+img {
+    width: 50px;
+    height: auto;
+}
