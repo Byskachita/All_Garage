@@ -51,7 +51,7 @@ h3 {
     position: absolute;
     text-align: center;
     padding: 0 250px;
-    top: 150px;
+    top: 430px;
 }
 
 .txt_slider_ {
@@ -62,14 +62,15 @@ h3 {
 }
 
 .txt_slider h1 {
-    font-size: 50px;
-    color: black;
+    color: #FDC309;
+    text-shadow: 5px 5px 10px #000000;
 }
 
-.txt_slider h2 {
+.txt_slider_ h2 {
     font-size: 50px;
-    color: #000000;
+    color: #FDC309;
     text-align: left;
+    text-shadow: 5px 5px 10px #000000;
 }
 
 .txt_slider p {
