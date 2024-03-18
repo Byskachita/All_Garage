@@ -5,7 +5,13 @@ body * {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+main {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+
+h1{
     font-family: 'Anton', sans-serif;
 }
 
@@ -47,6 +53,10 @@ h3 {
     display: flex;
 }
 
+.carousel-item img {
+    object-fit: cover;
+}
+
 .txt_slider {
     position: absolute;
     text-align: center;
@@ -78,6 +88,13 @@ h3 {
     text-shadow: 5px 5px 5px #000000;
 }
 
+/*****************************************DESTACADOS*/
+
+#Destacados {
+    width: 100%;
+}
+
+
 
 /*****************************************CARDS*/
 
@@ -86,14 +103,16 @@ h3 {
 }
 
 /*****************************************SECTION SMOTH*/
-
 .smoth {
     background-color: #FDC309;
 }
 
 .smoth .card {
-    background-color: #FDC309;
     border-style: none;
+    background-color: #FDC309;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
 }
 
 .smoth img {
@@ -106,3 +125,64 @@ img {
     width: 50px;
     height: auto;
 }
+
+/******************************************FORM*/
+
+/*+++++++++++++++++++++++++++++++++++++++++CAROUSEL*/
+  
+.carousel img {
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+
+/*******************************************FOOTER*/
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+}
+
+footer img {
+    width: 180px;
+    height: auto;
+}
+
+footer .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+footer .bi-facebook {
+    color: #ffffff;
+    font-size: x-large;
+}
+
+footer .bi-instagram {
+    color: #ffffff;
+    font-size: x-large;
+}
+
+footer .bi-whatsapp {
+    color: #ffffff;
+    font-size: x-large;
+}
+
+@media screen and (max-width: 600px){
+    footer .grupo-1{
+        width: 80%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    } 
+}
+    
+
+
