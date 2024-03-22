@@ -320,14 +320,14 @@ footer .bi-whatsapp {
 
     .navbar {
         width: 100%;
-        max-height: 55px;
+        max-height: 60px;
         max-width: 80%;
         margin: auto; 
     }
 
     .navbar img {
         width: auto;
-        height: 28px;
+        height: 40px;
     }
 
     #carouselExampleAutoplaying {
