@@ -104,7 +104,7 @@
         <div class="row text-center">
             <p>Crea la ruta que más te acomode con google maps, solo da click al mapa en "cómo llegar" y te guiará hasta nosotros.</p>
         </div>
-        <div class="col-12">
+        <div class="col-12 mb-5">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13311.740035313644!2d-70.6695908!3d-33.4770428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5004976fbad%3A0x43232a59af3c71b3!2sAllgarage!5e0!3m2!1ses-419!2scl!4v1711380363348!5m2!1ses-419!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
@@ -112,35 +112,40 @@
 
 <!---------------------------------------------------------------------------------------FORM-->
 
-<section id="formulario" class="Cotizacion m-5">
+<section class="formulario" class="Cotizacion m-5 pt-5">
     <h2 class="text-center display-6">Contáctanos</h2>
   
       <div class="container_form">
         <div class="row">
-  
-          <form id="form" action="" method="post">
-            <div class="mb-3">
-              <label for="formGroupExampleInput" class="form-label">Nombre</label>
-              <input type="name" class="form-control" id="formGroupExampleInput" placeholder="Nombre y apellido">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label" id="email">Mail</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-              <label for="formGroupExampleInput3" class="form-label" id="telefono">Teléfono</label>
-              <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="(+56) 9 0000 0000">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label" id="message">Cotización</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Cotiza con nosotros"></textarea>
-            </div>
-            <div>
-              <button type="button" class="btn btn-outline-secondary">Enviar</button>
-              <a id="emailA"></a>
-            </div>
-  
-          </form>
+          <div class="col-md-12 pt-5">
+
+            <form id="form_datos" name="contacto" action="send.php" method="post">
+              <div class="form-group col-md-12 m-3">
+                <label for="nombre">Nombre</label>
+                <input id="name" type="text" class="form-control" name="nombre" placeholder="Ingrese su nombre">
+              </div>
+
+              <div class="form-group col-md-12 m-3">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+              </div>
+
+              <div class="form-group col-md-12 m-3">
+                <label for="correo">Email</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="name@example.com">
+              </div>
+
+              <div class="form-group col-md-12 m-3">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Contáctanos"></textarea>
+              </div>
+
+              <div class="form-group col-md-12 m-3">
+                <button type="button" class="btn btn-outline-secondary btn-block">Enviar</button>
+              </div>
+
+            </form>  
+          </div>                
         </div>
       </div>
   
@@ -149,7 +154,7 @@
 
 <!------------------------------------------------------------------------------FOOTER-->
 
-<footer>
+<footer class="mt-4">
     <div class="grupo-1">
       <div class="box">
         <a href="">
@@ -163,7 +168,7 @@
         <div class="red-social">
           <a href="#" class="bi-facebook m-1" alt="logo facebook"></a>
           <a href="#" class="bi-instagram m-2" alt="logo instagram"></a>
-          <a href="https://api.whatsapp.com/send?phone=56965808594&text=Hola,%20necesito%20ser%20contactado." target="_blank" class="bi-whatsapp m-1" alt="logo whatsapp"></a>
+          <a href="https://api.whatsapp.com/send?phone=56965808594&text=Hola,%20necesito%20ser%20contactado." rel="noopener" target="_blank" class="bi-whatsapp m-1" alt="logo whatsapp"></a>
           <br>
           <small>&copy; 2024 <b>AllGarage</b> - Designed by Denisse Rossel N.</small>
         </div>
@@ -171,6 +176,30 @@
       </div>
     </div>
   </footer>
+
+  <!--script>
+
+    let formulario = document.getElementById('form_datos');
+
+    formulario.addEventListener('submit', e=>{
+      e.preventDefault();
+
+      let datos = new FormData(formulario);
+
+      peticion = {
+        method:'POST',
+        body:datos,
+      }
+
+      fetch('php/recibir-datos.php' ,peticion)
+        .then(respuesta => respuesta.json())
+        .then(respuesta =>{
+
+        }).catch(error =>console.log('error', error));
+
+    })
+
+  </script-->
 
 </body>
 
