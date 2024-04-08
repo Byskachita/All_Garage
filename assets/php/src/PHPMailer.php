@@ -1,5 +1,13 @@
 <?php
 
+$mail->isSMTP();
+    $mail->Host='info@allgarage.cl';
+    $mail->SMTPAuth=true;
+    $mail->Port=465;
+    $mail->Username='info@allgarage.cl';
+    $mail->Password='contraseña';
+    $mail->SMTPSecure='ssl';
+
 /**
  * PHPMailer - PHP email creation and transport class.
  * PHP Version 5.5.
