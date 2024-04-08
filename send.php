@@ -1,6 +1,10 @@
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMail\Exception;
+require 'assets/php/src/Exception.php';
+require 'assets/php/src/PHPMailer.php';
+require 'assets/php/src/SMTP.php';
 
 require 'php/PHPMailer.php';
 
